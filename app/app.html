@@ -7,7 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    123
-    组长添加
+    <script>
+      function getRate(a,b){
+        if(a==null || a<0 || a>b || b<0 || !parseInt(b)){
+           console.log("error")
+        }else{
+            var arr=[]            
+            for(var i=0;i<b && 5;i++){
+                arr.push("☆")
+  		        }
+                var black=[]
+                for(var i=0;i<a;i++){
+                    black.push("★")
+                }
+                arr.splice(0,a,black)
+                console.log(arr.join(","))               
+        }
+    }
+    getRate(4,8)
+    </script>
 </body>
 </html>
